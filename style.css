@@ -1,0 +1,167 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.screen { 
+    display: flex; 
+    flex-direction: column-reverse; 
+    width: 48%; 
+    height: 90vh; 
+    background-color: rgba(7, 7, 7, 0.829); 
+    margin: 20px auto; 
+    border-radius: 3%; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    border-radius:0 0 15px 15px;
+    padding-bottom: 10px;
+}
+
+.main-title{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 0;
+    color: gray;
+}
+
+.paragraph {
+    font-size: large;
+    text-align: center;
+    margin-top: 0;
+}
+
+.specs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.wind {
+    width: 30%;
+    border-right: 1px solid gray;
+}
+
+.temperature {
+    width: 30%;
+    border-right: 1px solid gray;
+}
+
+.precipitation {
+    width: 30%;
+}
+
+.parameters {
+    text-align: center;
+    font-size: large;
+}
+
+
+.location {
+    margin: 10px auto 0 auto;
+    padding: 3%;
+    width: 95%;
+    height: 30px;
+}
+
+.suggestions {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 2%;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+}
+
+.suggestions li {
+    padding: 3%;
+    font-size: 90%;
+}
+
+.suggestions li:hover {
+    background-color: rgb(211, 206, 206);
+}
+
+.suggestions li:not(:last-of-type) {
+    border-bottom: 1px solid gray;
+}
+
+.mapa {
+    width: 95%;
+    margin: 5% auto 0 auto; 
+}
+
+.mapa img {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 480px) {
+    .screen {
+        width: 95%;
+    }
+
+    .specs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wind,
+    .temperature,
+    .precipitation {
+        width: 80%;
+        border: none;
+        border-bottom: 1px solid gray;
+        margin-bottom: 10px;
+    }
+
+    .location {
+        width: 90%;
+    }
+
+    .mapa img {
+        max-height: 30vh;
+    }
+
+    .content {
+        height: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .screen {
+        width: 85%;
+    }
+
+    .content {
+        height: 90%;
+    }
+
+    .main-title {
+        margin-top: 60px;
+    }
+    .mapa img {
+        max-height: 45vh;
+    }
+
+    .suggestions {
+        max-width: 60%;
+    }
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="content">
+            <section class="titles">
+                <h2 class="main-title">Enter A Location</h2>
+                <p class="paragraph">To Find The Weather</p>
+            </section>
+            <section class="specs">
+                <div class="wind">
+                    <h3 class="title">Wind</h3>
+                    <p class="parameters" id="wind">TBD</p>
+                </div>
+                <div class="temperature">
+                    <h3 class="title">Temperature</h3>
+                    <p class="parameters" id="temperature">TBD</p>
+                </div>
+                <div class="precipitation">
+                    <h3 class="title">Precipitation</h3>
+                    <p class="parameters" id="precipitation">TBD</p>
+                </div>
+            </section>
+
+            <input class="location" name="location" type="search" id="location">
+            <div> 
+                <ul class="suggestions" id="suggestions" >
+                </ul>
+                
+            </div>
+            </section>
+            <div class="mapa" id="map">
+                <img src="img/staticmap.jfif" alt="imagen del mundo">
+            </div>
+    
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
